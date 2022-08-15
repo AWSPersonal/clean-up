@@ -45,11 +45,11 @@ Start the app
 
 ## Arguments Reference
 
-|    Args     | Default                      | Description                                                                |
-|:-----------:|:-----------------------------|:---------------------------------------------------------------------------|
-| `--export`  | `false`                      | Lets you only the export all the list of services to a CSV file            |
-| `--display` | `false`                      | Lets you only display the list of services as JSON on the terminal or bash |
-| `--account` | `default value from .config` | Set which account to get the services from                                 |
+|      Args      | Default                      | Description                                                                |
+|:--------------:|:-----------------------------|:---------------------------------------------------------------------------|
+|   `--export`   | `false`                      | Lets you only the export all the list of services to a CSV file            |
+|  `--display`   | `false`                      | Lets you only display the list of services as JSON on the terminal or bash |
+|  `--account`   | `default value from .config` | Set which account to get the services from                                 |
 
 To get more details for the arguments passed for the app, use the below command
 
