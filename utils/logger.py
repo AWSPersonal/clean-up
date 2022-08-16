@@ -1,15 +1,51 @@
+"""
+    Logger
+"""
+
 import logging
 
-class Logger:
 
-    def info(self, message: str):
-        logging.basicConfig(format='%(levelname)s : %(message)s', level=logging.INFO)
+class Logger:
+    """
+    Logger
+    """
+
+    @staticmethod
+    def info(message: str):
+        """
+
+        :param message:
+        """
+        print_format = "%(levelname)s : %(message)s"
+        logging.basicConfig(format=print_format, level=logging.INFO)
         logging.info(message)
 
-    def warn(self, message: str):
-        logging.basicConfig(format='%(levelname)s-%(message)s', level=logging.WARN)
+    @staticmethod
+    def warn(message: str):
+        """
+
+        :param message:
+        """
+        print_format = "%(levelname)s : %(message)s"
+        logging.basicConfig(format=print_format, level=logging.WARN)
         logging.warning(message)
 
-    def warn(self, message: str):
-        logging.basicConfig(format='%(levelname)s-%(message)s', level=logging.WARN)
+    @staticmethod
+    def debug(message: str):
+        """
+
+        :param message:
+        """
+        print_format = "%(levelname)s : %(message)s"
+        logging.basicConfig(format=print_format, level=logging.DEBUG)
+        logging.warning(message)
+
+    @staticmethod
+    def error(message: str):
+        """
+
+        :param message:
+        """
+        print_format = "%(levelname)s : %(message)s"
+        logging.basicConfig(format=print_format, level=logging.ERROR)
         logging.warning(message)

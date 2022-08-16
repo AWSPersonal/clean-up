@@ -1,18 +1,20 @@
 import os
 
+from utils.logger import Logger
+
 
 class SystemUtil:
     """
-        SystemUtil
+    SystemUtil
     """
 
     def __init__(self):
-        pass
+        self.__logger = Logger()
 
-    @staticmethod
-    def get_root_path():
-        """
-
-        :return:
-        """
-        return os.path.abspath(os.curdir)
+    def create_dir(self, path_string: str = None):
+        path = os.path.join(*path_string.split(","))
+        is_exist = os.path.exists(path)
+        if not is_exist:
+            os.makedirs(path)
+            self.__logger.info(f"Successfully created directory: {path}")
+        return path

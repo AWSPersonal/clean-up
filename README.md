@@ -42,7 +42,6 @@ Start the app
   python app.py
 ```
 
-
 ## Arguments Reference
 
 |      Args      | Default                      | Description                                                                |
@@ -60,4 +59,3 @@ To get more details for the arguments passed for the app, use the below command
 ## Authors
 
 - [@devpoilath](https://www.linkedin.com/in/manjunath-pv-336232127/)
-
